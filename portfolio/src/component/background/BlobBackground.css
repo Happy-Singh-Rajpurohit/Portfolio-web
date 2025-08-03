@@ -1,0 +1,54 @@
+/* src/components/BlobBackground.css */
+
+.blobs-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0e0e0e; /* Set the dark background here */
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  opacity: 0.5;
+  border-radius: 50%;
+  filter: blur(150px);
+  animation: move 25s infinite ease-in-out alternate;
+}
+
+.blob1 {
+  top: 10%;
+  left: 15%;
+  background: radial-gradient(circle at center, #8a2be2, #4b0082);
+}
+
+.blob2 {
+  top: 30%;
+  left: 60%;
+  background: radial-gradient(circle at center, #00ffff, #1e90ff);
+  animation-delay: 5s;
+}
+
+.blob3 {
+  top: 70%;
+  left: 30%;
+  background: radial-gradient(circle at center, #ff00ff, #8b008b);
+  animation-delay: 10s;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(80px, -60px) scale(1.2);
+  }
+  100% {
+    transform: translate(-60px, 40px) scale(1);
+  }
+}
