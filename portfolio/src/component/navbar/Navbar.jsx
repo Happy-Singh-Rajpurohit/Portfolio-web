@@ -13,7 +13,7 @@ export default function Navbar(){
 
             {/* Center Logo */}
             <div className='nav-logo'>
-                <img src="" alt="logo" />
+                <img src="/logo.png" alt="logo" />
             </div>
 
             {/* Right Navbar Tags */}

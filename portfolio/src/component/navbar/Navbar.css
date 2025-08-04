@@ -27,8 +27,15 @@
   justify-content: center;
 }
 
+.nav-logo img{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
 /*Poperties for anchor tags*/
 .navbar-container a{
+  font-size: 1.4rem;
     font-weight: 500;
     color: white;
     text-decoration: none;

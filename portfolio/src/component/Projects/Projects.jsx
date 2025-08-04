@@ -37,7 +37,7 @@ export default function Projects() {
                         viewport={{ once: true, amount: 0.3 }}
                     >
                         <div className='card-shrink'>
-                            <img src="/photo.jpeg" alt="soceity-sphere" />
+                            <img src="/project.png" alt="soceity-sphere" />
                             <h2>{project.title}</h2>
                         </div>
 

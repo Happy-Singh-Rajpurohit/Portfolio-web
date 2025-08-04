@@ -86,9 +86,13 @@
     .about {
         flex-direction: column;
         margin-top: 4rem;
-        padding: 2rem;
+        /* padding: 2rem; */
         text-align: center;
-        gap: 0;
+        gap: 1rem;
+    }
+
+    .left-section{
+        height: auto;
     }
 
     .left-section p {

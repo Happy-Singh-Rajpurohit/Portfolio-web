@@ -4,8 +4,7 @@
     background-color: #111;
     color: white;
     text-align: center;
-    /* min-height: 100vh; */
-    height: auto;
+    min-height: 80vh;
 }
 
 .project-section h1 {
