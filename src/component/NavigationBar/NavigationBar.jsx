@@ -1,4 +1,4 @@
-import './Navbar.css';
+import './NavigationBar.css';
 import { Link } from "react-scroll";
 
 export default function NavigationBar() {
