@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <BlobBackground/>
-      <NavigationBar/>
+      {/* <NavigationBar/> */}
       <About/>
       <Tech/>
       <Projects/>
