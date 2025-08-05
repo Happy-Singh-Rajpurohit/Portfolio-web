@@ -1,5 +1,5 @@
 import './App.css'
-import NavigationBar from './component/Navbar/Navbar';
+import NavigationBar from './component/NavigationBar/NavigationBar';
 import About from './component/About/About';
 import BlobBackground from './component/background/BlobBackground';
 import Contact from './component/Contact/Contact';
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <BlobBackground/>
-      {/* <NavigationBar/> */}
+      <NavigationBar/>
       <About/>
       <Tech/>
       <Projects/>
