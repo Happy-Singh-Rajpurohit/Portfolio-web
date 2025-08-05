@@ -1,7 +1,7 @@
 import './Navbar.css';
 import { Link } from "react-scroll";
 
-export default function Navbar() {
+export default function NavigationBar() {
     return (
         //Navbar Container
         <nav className='navbar-container'>
