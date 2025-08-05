@@ -1,7 +1,7 @@
 import './App.css'
 import NavigationBar from './component/NavigationBar/NavigationBar';
 import About from './component/About/About';
-import BlobBackground from './component/Background/BlobBackground';
+import BlobBackground from './component/background/BlobBackground';
 import Contact from './component/Contact/Contact';
 import Footer from './component/Footer/Footer';
 import Projects from './component/Projects/Projects';
