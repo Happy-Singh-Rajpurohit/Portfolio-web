@@ -18,7 +18,7 @@ export default function Footer() {
                     <a href="https://www.instagram.com/HappyRajpurohit10/">
                         <img src="/instagram.png" alt="instagram" />
                     </a>
-                    <a href="www.linkedin.com/in/happy-singh-rajpurohit">
+                    <a href="https://www.linkedin.com/in/happy-singh-rajpurohit/">
                         <img src="/linkedin.png" alt="linkedin" />
                     </a>
                 </div>
