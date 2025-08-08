@@ -1,4 +1,4 @@
-/*Outer Container*/
+/* Outer Container */
 .navbar-container {
     position: fixed;
     top: 0;
@@ -14,7 +14,7 @@
     color: white;
 }
 
-/*Flex for equal space*/
+/* Flex for equal space */
 .left-panel,
 .right-panel,
 .nav-logo {
@@ -24,7 +24,7 @@
     justify-content: space-around;
 }
 
-/*Aligning logo at center*/
+/* Aligning logo at center */
 .nav-logo {
     justify-content: center;
 }
@@ -35,7 +35,7 @@
     border-radius: 50%;
 }
 
-/*Poperties for anchor tags*/
+/* Properties for anchor tags */
 .navbar-container a {
     font-size: 1.4rem;
     font-weight: 500;
@@ -47,4 +47,91 @@
 
 .navbar-container a:hover {
     color: #8a2be2;
+}
+
+/* --- Mobile Menu & Hamburger Icon Styles --- */
+
+/* Initially hide the hamburger icon on desktop */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    z-index: 20; /* Ensure it's above other elements */
+}
+
+.bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Styles for when the hamburger menu is open */
+.hamburger-menu .bar.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu .bar.open:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu .bar.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile dropdown menu */
+.mobile-menu {
+    position: absolute;
+    top: 100%; /* Position right below the navbar */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* A slightly darker background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu a {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+/* --- Media Queries for Responsive Design --- */
+@media (max-width: 768px) {
+    /* Hide the desktop navigation links */
+    .desktop-only {
+        display: none;
+    }
+
+    /* Display the hamburger menu */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* On mobile, center the logo and push the hamburger to the left */
+    .navbar-container {
+        justify-content: space-between;
+    }
+
+    .nav-logo {
+        flex: 1; /* Allows the logo to take available space */
+        order: 2; /* Puts the logo in the middle */
+        justify-content: center;
+    }
+
+    /* Push the hamburger menu to the far left */
+    .hamburger-menu {
+        order: 1;
+        flex: 0;
+    }
+
+    /*
+     * The `mobile-menu` is visible by default when `isOpen` is true in JSX.
+     * We don't need a CSS rule to show it here.
+     */
 }

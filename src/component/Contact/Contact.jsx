@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Contact() {
     return (
-        <section className='contact-section'>
+        <section className='contact-section' id='contact'>
             {/* <motion.h1
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
