@@ -5,12 +5,15 @@ import { motion } from 'framer-motion';
 
 const projects = [
     {
-        title: 'Society Spehere',
+        title: 'Society Sphere',
         description: 'A centralized platform to manage events, tasks, and announcements within student societies. Features include role-based login, real-time task tracking, and Firebase backend.',
-        tech: ['HTML', 'CSS', 'JS', 'FIREBASE'],
-        video: '/sample.mp4',
-        liveLink: 'https://society-organiser.vercel.app/'
-    }
+        tech: ['ReactJS', 'Tailwind CSS', 'TypeScript', 'FIREBASE'],
+        video: '/sample3.mov',
+        liveLink: 'https://society-organiser.netlify.app/'
+    },
+    // {
+
+    // }
 
 ]
 
@@ -37,7 +40,7 @@ export default function Projects() {
                         viewport={{ once: true, amount: 0.3 }}
                     >
                         <div className='card-shrink'>
-                            <img src="/project.png" alt="soceity-sphere" />
+                            <img src="/societysphere.png" alt="soceity-sphere" />
                             <h2>{project.title}</h2>
                         </div>
 

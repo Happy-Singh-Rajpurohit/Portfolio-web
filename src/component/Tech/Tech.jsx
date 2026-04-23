@@ -20,7 +20,7 @@ const skills = [
     { name: "EJS", icon: <SiEjs /> },
     { name: "MySQL", icon: <SiMysql /> },
     { name: "MongoDB", icon: <SiMongodb /> },
-    { name: "C", icon: <SiC /> },
+    // { name: "C", icon: <SiC /> },
 ];
 
 export default function Tech() {
