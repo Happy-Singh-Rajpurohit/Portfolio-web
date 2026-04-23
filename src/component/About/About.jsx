@@ -44,7 +44,7 @@ export default function About() {
                 </div>
             </div>
             <div className='right-section' data-aos="fade-right">
-                <img src="/image2.png" alt="my-photo" className='my-image' />
+                <img src="/Happy.jpeg" alt="my-photo" className='my-image' />
             </div>
         </div>
     )

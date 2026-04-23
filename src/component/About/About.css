@@ -75,8 +75,9 @@
 .right-section img {
     height: 400px;
     width: 400px;
+    /* margin-top: 2rem; */
     border-radius: 50%;
-    object-fit: contain;
+    object-fit: cover;
     box-shadow: 0 0 35px rgba(138, 43, 226, 0.5);
     background-color: rgb(255, 255, 255);
 }
